@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Data for Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Data</h1>
+        <form action="/form" method="post">
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required><br>
+
+            <label for="Sex">Sex:</label>
+            <select id="Sex" name="Sex" required>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select><br>
+
+            <label for="Housing">Housing:</label>
+            <select id="Housing" name="Housing" required>
+                <option value="free">Free</option>
+                <option value="own">Own</option>
+                <option value="rent">Rent</option>
+            </select><br>
+
+            <label for="Saving accounts">Saving accounts:</label>
+            <select id="Saving accounts" name="Saving accounts" required>
+                <option value="little">Little</option>
+                <option value="moderate">Moderate</option>
+                <option value="quite rich">Quite rich</option>
+                <option value="rich">Rich</option>
+            </select><br>
+
+            <label for="Checking account">Checking account:</label>
+            <select id="Checking account" name="Checking account" required>
+                <option value="little">Little</option>
+                <option value="moderate">Moderate</option>
+                <option value="rich">Rich</option>
+            </select><br>
+
+            <label for="Credit amount">Credit amount:</label>
+            <input type="number" id="Credit amount" name="Credit amount" required><br>
+
+            <label for="Duration">Duration:</label>
+            <input type="number" id="Duration" name="Duration" required><br>
+
+            <label for="Purpose">Purpose:</label>
+            <select id="Purpose" name="Purpose" required>
+                <option value="business">Business</option>
+                <option value="car">Car</option>
+                <option value="domestic appliances">Domestic appliances</option>
+                <option value="education">Education</option>
+                <option value="furniture/equipment">Furniture/Equipment</option>
+                <option value="radio/TV">Radio/TV</option>
+                <option value="repairs">Repairs</option>
+                <option value="vacation/others">Vacation/Others</option>
+            </select><br>
+
+            <label for="Job">Job:</label>
+            <select id="Job" name="Job" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
